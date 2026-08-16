@@ -1,0 +1,3336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- =====================================================
+         BASIC DOCUMENT SETUP
+    ====================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#070816"
+    >
+
+    <meta
+        name="description"
+        content="Six months of memories, smiles, dreams and love."
+    >
+
+    <title>Six Months of Us ❤️</title>
+
+
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- =====================================================
+         ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+
+    <!-- =====================================================
+         MAIN CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         PAGE LOADER
+    ====================================================== -->
+
+    <div
+        id="pageLoader"
+        class="page-loader"
+    >
+
+        <div class="loader-stars"></div>
+
+        <div class="loader-content">
+
+            <div class="loader-heart">
+
+                <span>❤</span>
+
+            </div>
+
+            <p class="loader-small">
+                A little universe...
+            </p>
+
+            <h2>
+                made for us
+            </h2>
+
+            <div class="loader-progress">
+
+                <div
+                    id="loaderProgress"
+                    class="loader-progress-bar"
+                ></div>
+
+            </div>
+
+            <p class="loader-percent">
+                <span id="loaderPercent">0</span>%
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         GLOBAL CINEMATIC BACKGROUND
+    ====================================================== -->
+
+    <div
+        id="universe"
+        class="universe"
+        aria-hidden="true"
+    >
+
+        <!-- Deep background -->
+
+        <div class="universe-gradient"></div>
+
+
+        <!-- Stars -->
+
+        <div
+            id="starLayer"
+            class="star-layer"
+        ></div>
+
+
+        <!-- Twinkling stars -->
+
+        <div
+            id="twinkleLayer"
+            class="twinkle-layer"
+        ></div>
+
+
+        <!-- Nebula -->
+
+        <div class="nebula nebula-one"></div>
+
+        <div class="nebula nebula-two"></div>
+
+        <div class="nebula nebula-three"></div>
+
+
+        <!-- Aurora -->
+
+        <div class="aurora aurora-one"></div>
+
+        <div class="aurora aurora-two"></div>
+
+
+        <!-- Floating particles will be
+             created by JavaScript -->
+
+        <div
+            id="ambientParticles"
+            class="ambient-particles"
+        ></div>
+
+
+        <!-- Shooting stars will be
+             created by JavaScript -->
+
+        <div
+            id="shootingStars"
+            class="shooting-stars"
+        ></div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MUSIC
+    ====================================================== -->
+
+  <audio id="voiceMessageAudio" preload="auto">
+    <source src="assets/voice-message.mp3" type="audio/mpeg">
+</audio>
+
+
+
+    <!-- =====================================================
+         TOP CONTROLS
+    ====================================================== -->
+
+    <div class="top-controls">
+
+
+        <!-- Music -->
+
+        <button
+            id="musicToggle"
+            class="control-button"
+            type="button"
+            aria-label="Toggle music"
+        >
+
+            <i class="fa-solid fa-volume-xmark"></i>
+
+        </button>
+
+
+        <!-- Sound wave -->
+
+        <div
+            id="musicVisualizer"
+            class="music-visualizer"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+
+
+    </div>
+
+
+
+    <!-- =====================================================
+         MAIN WEBSITE
+    ====================================================== -->
+
+    <main id="mainContent">
+
+
+        <!-- =================================================
+             HERO / OPENING SCENE
+        ================================================== -->
+
+        <section
+            id="hero"
+            class="hero-section"
+        >
+
+
+            <!-- Cinematic glow -->
+
+            <div class="hero-glow hero-glow-one"></div>
+
+            <div class="hero-glow hero-glow-two"></div>
+
+
+            <!-- Moon -->
+
+            <div class="hero-moon">
+
+                <div class="moon-crater crater-one"></div>
+
+                <div class="moon-crater crater-two"></div>
+
+                <div class="moon-crater crater-three"></div>
+
+                <div class="moon-crater crater-four"></div>
+
+            </div>
+
+
+            <!-- Hero content -->
+
+            <div class="hero-content">
+
+
+                <p
+                    class="hero-overline reveal"
+                    data-reveal="fade"
+                >
+
+                    ✦ A little story about us ✦
+
+                </p>
+
+
+                <!-- =========================================
+                     V ❤️ B ANIMATION
+                ========================================== -->
+
+                <div
+                    id="initialsScene"
+                    class="initials-scene"
+                >
+
+
+                    <!-- Left initial -->
+
+                    <div
+                        id="initialV"
+                        class="initial initial-v"
+                    >
+
+                        V
+
+                    </div>
+
+
+                    <!-- Center particle/heart area -->
+
+                    <div
+                        id="initialHeart"
+                        class="initial-heart"
+                    >
+
+                        <span class="heart-glow"></span>
+
+                        <span class="heart-symbol">
+                            ❤
+                        </span>
+
+                    </div>
+
+
+                    <!-- Right initial -->
+
+                    <div
+                        id="initialB"
+                        class="initial initial-b"
+                    >
+
+                        B
+
+                    </div>
+
+
+                    <!-- Particle container -->
+
+                    <div
+                        id="initialParticles"
+                        class="initial-particles"
+                    ></div>
+
+
+                </div>
+
+
+                <!-- Main title -->
+
+                <h1
+                    id="heroTitle"
+                    class="hero-title"
+                >
+
+                    Six Months
+
+                </h1>
+
+
+                <div
+                    class="hero-subtitle"
+                    data-reveal="fade"
+                >
+
+                    of
+
+                    <span>
+                        us
+                    </span>
+
+                </div>
+
+
+                <p
+                    id="heroDescription"
+                    class="hero-description"
+                >
+
+                    Six months...
+
+                    countless little moments...
+
+                    and one story that became
+
+                    incredibly special to me. ❤️
+
+                </p>
+
+
+                <!-- Start journey -->
+
+                <button
+                    id="beginJourney"
+                    class="primary-button"
+                    type="button"
+                >
+
+                    <span>
+                        Begin Our Story
+                    </span>
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </button>
+
+
+                <!-- Scroll hint -->
+
+                <div
+                    id="heroScrollHint"
+                    class="scroll-hint"
+                >
+
+                    <span>
+                        scroll slowly
+                    </span>
+
+                    <div class="scroll-mouse">
+
+                        <span></span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Bottom fade -->
+
+            <div class="hero-bottom-fade"></div>
+
+        </section>
+
+
+
+        <!-- =================================================
+             ANNIVERSARY INTRO
+        ================================================== -->
+
+        <section
+            id="anniversaryIntro"
+            class="story-section intro-section"
+        >
+
+            <div class="section-container">
+
+
+                <div
+                    class="section-label"
+                    data-reveal="up"
+                >
+
+                    CHAPTER 01
+
+                </div>
+
+
+                <h2
+                    class="section-title"
+                    data-reveal="up"
+                >
+
+                    Six months...
+
+                    <span>
+                        already?
+                    </span>
+
+                </h2>
+
+
+                <div
+                    class="intro-line"
+                    data-reveal="scale"
+                ></div>
+
+
+                <p
+                    class="section-text large-text"
+                    data-reveal="up"
+                >
+
+                    It feels like yesterday...
+
+                    and at the same time,
+
+                    it feels like you've been
+
+                    a part of my life forever.
+
+                </p>
+
+
+                <p
+                    class="section-text"
+                    data-reveal="up"
+                >
+
+                    Six months isn't just a number.
+
+                    It's the late-night conversations,
+
+                    stupid jokes,
+
+                    little arguments,
+
+                    random smiles,
+
+                    missing each other,
+
+                    and all those tiny moments
+
+                    that somehow became
+
+                    our memories.
+
+                </p>
+
+
+                <div
+                    class="intro-heart"
+                    data-reveal="scale"
+                >
+
+                    <span>❤</span>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        <!-- =================================================
+
+<!-- =================================================
+     CHAPTER 02 — OUR MEMORIES
+================================================== -->
+
+<section
+    id="memories"
+    class="story-section memories-section"
+>
+
+    <div class="section-container">
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 02
+        </div>
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            Little moments.
+            <span>Big memories.</span>
+        </h2>
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            Some moments may look ordinary to everyone else...
+            but somehow they became special because they were
+            connected to you.
+        </p>
+
+
+        <!-- =============================================
+             MEMORY GRID
+        ============================================== -->
+
+        <div
+            id="memoryGrid"
+            class="memory-grid"
+        >
+
+
+            <!-- MEMORY 01 -->
+
+            <article
+                class="memory-card memory-card-large"
+                data-memory="1"
+                data-reveal="up"
+            >
+
+                <div class="memory-image">
+
+                    <img
+                        src="assets/photo1.jpg"
+                        alt="Our first memory"
+                        loading="lazy"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <span>
+                            MEMORY 01
+                        </span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="memory-info">
+
+                    <span class="memory-date">
+                        CHAPTER ONE
+                    </span>
+
+                    <h3>
+                        The moment it started
+                    </h3>
+
+                    <p>
+                        This is one of those moments
+                        I wish I could save forever.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 02 -->
+
+            <article
+                class="memory-card"
+                data-memory="2"
+                data-reveal="up"
+            >
+
+                <div class="memory-image">
+
+                    <img
+                        src="assets/photo2.jpg"
+                        alt="A special memory"
+                        loading="lazy"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <span>
+                            MEMORY 02
+                        </span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="memory-info">
+
+                    <span class="memory-date">
+                        CHAPTER TWO
+                    </span>
+
+                    <h3>
+                        One of my favourites
+                    </h3>
+
+                    <p>
+                        A small moment...
+                        but a very big smile.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 03 -->
+
+            <article
+                class="memory-card"
+                data-memory="3"
+                data-reveal="up"
+            >
+
+                <div class="memory-image">
+
+                    <img
+                        src="assets/photo3.jpg"
+                        alt="Another beautiful memory"
+                        loading="lazy"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <span>
+                            MEMORY 03
+                        </span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="memory-info">
+
+                    <span class="memory-date">
+                        CHAPTER THREE
+                    </span>
+
+                    <h3>
+                        That smile
+                    </h3>
+
+                    <p>
+                        I don't think you realize
+                        how much your smile means to me.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 04 -->
+
+            <article
+                class="memory-card"
+                data-memory="4"
+                data-reveal="up"
+            >
+
+                <div class="memory-image">
+
+                    <img
+                        src="assets/photo4.jpg"
+                        alt="A beautiful memory together"
+                        loading="lazy"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <span>
+                            MEMORY 04
+                        </span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="memory-info">
+
+                    <span class="memory-date">
+                        CHAPTER FOUR
+                    </span>
+
+                    <h3>
+                        Just us
+                    </h3>
+
+                    <p>
+                        No big occasion.
+                        No special reason.
+                        Just another memory I love.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 05 -->
+
+            <article
+                class="memory-card"
+                data-memory="5"
+                data-reveal="up"
+            >
+
+                <div class="memory-image">
+
+                    <img
+                        src="assets/photo5.jpg"
+                        alt="A memory I never want to forget"
+                        loading="lazy"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <span>
+                            MEMORY 05
+                        </span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="memory-info">
+
+                    <span class="memory-date">
+                        CHAPTER FIVE
+                    </span>
+
+                    <h3>
+                        I wish I could relive this
+                    </h3>
+
+                    <p>
+                        Some memories deserve
+                        to be replayed again and again.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- MEMORY 06 -->
+
+            <article
+                class="memory-card memory-card-special"
+                data-memory="6"
+                data-reveal="up"
+            >
+
+                <div class="memory-image">
+
+                    <img
+                        src="assets/photo6.jpg"
+                        alt="Our six month memory"
+                        loading="lazy"
+                    >
+
+                    <div class="memory-overlay">
+
+                        <span>
+                            SIX MONTHS
+                        </span>
+
+                        <i class="fa-solid fa-heart"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="memory-info">
+
+                    <span class="memory-date">
+                        CHAPTER SIX
+                    </span>
+
+                    <h3>
+                        And here we are ❤️
+                    </h3>
+
+                    <p>
+                        Six months later...
+                        and there are still so many
+                        memories left to make.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- MEMORY FOOTNOTE -->
+
+        <div
+            class="memory-footnote"
+            data-reveal="scale"
+        >
+
+            <span class="footnote-line"></span>
+
+            <i class="fa-solid fa-heart"></i>
+
+            <p>
+                These are only a few moments...
+                there are so many more inside my heart.
+            </p>
+
+            <span class="footnote-line"></span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 03 — THINGS I LOVE ABOUT YOU
+================================================== -->
+
+<section
+    id="loveReasons"
+    class="story-section reasons-section"
+>
+
+    <div class="section-container">
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 03
+        </div>
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            Things I love
+            <span>about you.</span>
+        </h2>
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            I could probably keep writing this forever...
+            but here are a few things that make you
+            incredibly special to me.
+        </p>
+
+
+        <!-- =============================================
+             REASON CARDS
+        ============================================== -->
+
+        <div
+            id="reasonGrid"
+            class="reason-grid"
+        >
+
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    01
+                </div>
+
+                <div class="reason-icon">
+                    😊
+                </div>
+
+                <h3>
+                    Your Smile
+                </h3>
+
+                <p>
+                    Somehow your smile can make
+                    even an ordinary day feel better.
+                </p>
+
+            </article>
+
+
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    02
+                </div>
+
+                <div class="reason-icon">
+                    🫶
+                </div>
+
+                <h3>
+                    Your Heart
+                </h3>
+
+                <p>
+                    The kindness and care you carry
+                    inside you is something I admire.
+                </p>
+
+            </article>
+
+
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    03
+                </div>
+
+                <div class="reason-icon">
+                    😂
+                </div>
+
+                <h3>
+                    Your Randomness
+                </h3>
+
+                <p>
+                    The silly conversations,
+                    stupid jokes and random moments...
+                    I love them.
+                </p>
+
+            </article>
+
+
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    04
+                </div>
+
+                <div class="reason-icon">
+                    🌷
+                </div>
+
+                <h3>
+                    Your Presence
+                </h3>
+
+                <p>
+                    Even when you don't say much,
+                    knowing you're there means something.
+                </p>
+
+            </article>
+
+
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    05
+                </div>
+
+                <div class="reason-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Your Dreams
+                </h3>
+
+                <p>
+                    I love seeing you dream big,
+                    and I want to see you achieve those dreams.
+                </p>
+
+            </article>
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    05
+                </div>
+
+                <div class="reason-icon">
+                    ✨
+                </div>
+
+                <h3>
+                    Your Gussa orNakhre 😂
+                </h3>
+
+                <p>
+                    I love to irriate u and see ur nakgre and then ur love in it 
+                </p>
+
+            </article>
+
+
+
+            <article
+                class="reason-card"
+                data-reveal="up"
+            >
+
+                <div class="reason-number">
+                    06
+                </div>
+
+                <div class="reason-icon">
+                    ❤️
+                </div>
+
+                <h3>
+                    Just You
+                </h3>
+
+                <p>
+                    And honestly...
+                    sometimes I don't even need a reason.
+                    You're simply you.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 05 — I MISS YOU
+================================================== -->
+
+<section
+    id="missYou"
+    class="story-section miss-you-section"
+>
+
+    <!-- Background moon -->
+
+    <div
+        class="miss-you-moon"
+        aria-hidden="true"
+    >
+
+        <div class="miss-moon-glow"></div>
+
+        <div class="miss-moon-crater crater-a"></div>
+
+        <div class="miss-moon-crater crater-b"></div>
+
+        <div class="miss-moon-crater crater-c"></div>
+
+    </div>
+
+
+    <!-- Floating stars -->
+
+    <div
+        class="miss-you-stars"
+        aria-hidden="true"
+    ></div>
+
+
+    <div class="miss-you-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 05
+        </div>
+
+
+        <div
+            class="miss-you-content"
+            data-reveal="up"
+        >
+
+            <span class="miss-you-small">
+                Sometimes...
+            </span>
+
+
+            <h2>
+
+                I just
+
+                <span>
+                    miss you.
+                </span>
+
+            </h2>
+
+
+            <div class="miss-you-divider">
+
+                <span></span>
+
+                <i class="fa-solid fa-heart"></i>
+
+                <span></span>
+
+            </div>
+
+
+            <p>
+
+                Sometimes I don't want another
+                long conversation.
+
+            </p>
+
+
+            <p>
+
+                I don't want another photo.
+
+                I don't want another video call.
+
+            </p>
+
+
+            <p class="miss-you-highlight">
+
+                I just want you here.
+
+            </p>
+
+
+            <p>
+
+                I want to sit beside you...
+
+                laugh about stupid things...
+
+                go somewhere without a plan...
+
+                eat something random...
+
+                take too many pictures...
+
+                and just enjoy being with you.
+
+            </p>
+
+
+            <p>
+
+                Maybe one day we'll look back at
+                these days and laugh about how much
+                we missed each other.
+
+            </p>
+
+
+            <h3>
+
+                Until then...
+
+                I'll keep waiting for
+                our next beautiful memory.
+
+            </h3>
+
+
+        </div>
+
+
+        <!-- Distance line -->
+
+        <div
+            class="distance-visual"
+            data-reveal="scale"
+        >
+
+            <div class="distance-person person-v">
+
+                <span>
+                    V
+                </span>
+
+            </div>
+
+
+            <div class="distance-line">
+
+                <div class="distance-stars"></div>
+
+                <i class="fa-solid fa-heart"></i>
+
+            </div>
+
+
+            <div class="distance-person person-b">
+
+                <span>
+                    B
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     "IF YOU WERE HERE" MOMENT
+================================================== -->
+
+<section
+    id="ifYouWereHere"
+    class="story-section here-section"
+>
+
+    <div class="here-glow"></div>
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            ONE LITTLE DREAM
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+
+            If you were here...
+
+        </h2>
+
+
+        <p
+            class="section-text large-text"
+            data-reveal="up"
+        >
+
+            I wouldn't need anything
+            extraordinary.
+
+        </p>
+
+
+        <div
+            class="dream-list"
+            data-reveal="up"
+        >
+
+            <div class="dream-item">
+
+                <span>
+                    🌆
+                </span>
+
+                <p>
+                    We'd go somewhere
+                    just to watch the sunset.
+                </p>
+
+            </div>
+
+
+            <div class="dream-item">
+
+                <span>
+                    🍕
+                </span>
+
+                <p>
+                    We'd eat something completely random
+                    and probably argue about who gets the last bite.
+                </p>
+
+            </div>
+
+
+            <div class="dream-item">
+
+                <span>
+                    📸
+                </span>
+
+                <p>
+                    We'd take way too many pictures
+                    and keep our favourites forever.
+                </p>
+
+            </div>
+
+
+            <div class="dream-item">
+
+                <span>
+                    😂
+                </span>
+
+                <p>
+                    We'd laugh at things
+                    that wouldn't make sense to anyone else.
+                </p>
+
+            </div>
+
+
+            <div class="dream-item">
+
+                <span>
+                    🌙
+                </span>
+
+                <p>
+                    And when the day ended,
+                    I'd probably still wish
+                    it didn't have to end.
+                    and we will just sit together and watch the moon and stars
+                    until we fall asleep. together hugging each other 
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="here-final"
+            data-reveal="scale"
+        >
+
+            <span>
+                ❤
+            </span>
+
+            <p>
+                That's the kind of simple happiness
+                I want to remember.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+<!-- =================================================
+     CHAPTER 06 — I BELIEVE IN YOU
+================================================== -->
+
+<section
+    id="studyDreams"
+    class="story-section dreams-section"
+>
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 06
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            Your dreams
+            <span>matter to me.</span>
+        </h2>
+
+
+        <p
+            class="section-text large-text"
+            data-reveal="up"
+        >
+            I don't just want to be someone
+            who loves you.
+        </p>
+
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            I want to be the person who reminds you
+            that you're capable of doing the things
+            you dream about.
+        </p>
+
+
+        <!-- =============================================
+             DREAM ORBIT
+        ============================================== -->
+
+        <div
+            id="dreamOrbit"
+            class="dream-orbit"
+            data-reveal="scale"
+        >
+
+            <div class="orbit-ring orbit-ring-one"></div>
+
+            <div class="orbit-ring orbit-ring-two"></div>
+
+            <div class="orbit-ring orbit-ring-three"></div>
+
+
+            <div class="orbit-center">
+
+                <span>
+                    ✨
+                </span>
+
+                <small>
+                    YOUR
+                </small>
+
+                <strong>
+                    DREAMS
+                </strong>
+
+            </div>
+
+
+            <div class="orbit-star orbit-star-one">
+                ⭐
+            </div>
+
+            <div class="orbit-star orbit-star-two">
+                ✦
+            </div>
+
+            <div class="orbit-star orbit-star-three">
+                ✨
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             STUDY MESSAGE
+        ============================================== -->
+
+        <div
+            id="studyMessage"
+            class="study-message"
+            data-reveal="up"
+        >
+
+            <div class="study-icon">
+
+                📚
+
+            </div>
+
+
+            <div class="study-content">
+
+                <span class="study-label">
+
+                    A LITTLE REMINDER
+
+                </span>
+
+
+                <h3>
+
+                    Now go study, silly. 😤❤️
+
+                </h3>
+
+
+                <p>
+
+                    I know sometimes studying gets boring.
+
+                    Sometimes you feel tired.
+
+                    Sometimes you just want to leave
+                    everything and relax.
+
+                </p>
+
+
+                <p>
+
+                    But remember...
+
+                    every chapter you finish,
+
+                    every question you solve,
+
+                    and every difficult day you survive
+
+                    is taking you one step closer
+                    to the future you want or we want for each other.
+
+                </p>
+
+
+                <p class="study-highlight">
+
+                    I believe in you.
+
+                    Even on the days when
+                    you don't believe in yourself.
+
+                </p>
+
+
+                <div class="study-signature">
+
+                    — someone who's
+                    quietly cheering for you ❤️
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =============================================
+             MOTIVATION BUTTON
+        ============================================== -->
+
+        <button
+            id="motivationButton"
+            class="motivation-button"
+            type="button"
+            data-reveal="up"
+        >
+
+            <span class="motivation-icon">
+                ✨
+            </span>
+
+            <span>
+                Give Me A Little Motivation
+            </span>
+
+            <i class="fa-solid fa-arrow-right"></i>
+
+        </button>
+
+
+        <div
+            id="motivationResult"
+            class="motivation-result"
+        >
+
+            <span class="motivation-result-heart">
+                ❤
+            </span>
+
+            <p id="motivationText">
+                You can do this.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 07 — LITTLE PROMISES
+================================================== -->
+
+<section
+    id="promises"
+    class="story-section promises-section"
+>
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 07
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            A few little
+            <span>promises.</span>
+        </h2>
+
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            Not perfect promises.
+
+            Not impossible promises.
+
+            Just little things I genuinely want
+            to keep trying to do.
+        </p>
+
+
+
+        <!-- =============================================
+             PROMISE CARDS
+        ============================================== -->
+
+        <div
+            id="promiseGrid"
+            class="promise-grid"
+        >
+
+
+            <!-- PROMISE 01 -->
+
+            <article
+                class="promise-card"
+                data-promise="1"
+                data-reveal="up"
+            >
+
+                <div class="promise-top">
+
+                    <span class="promise-number">
+                        01
+                    </span>
+
+                    <span class="promise-icon">
+                        🤍
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    I'll Listen
+                </h3>
+
+
+                <p>
+                    When you need someone to talk to,
+                    I'll try to listen before trying
+                    to fix everything.
+                </p>
+
+
+                <div class="promise-bottom">
+
+                    <span>
+                        promise
+                    </span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROMISE 02 -->
+
+            <article
+                class="promise-card"
+                data-promise="2"
+                data-reveal="up"
+            >
+
+                <div class="promise-top">
+
+                    <span class="promise-number">
+                        02
+                    </span>
+
+                    <span class="promise-icon">
+                        🌷
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    I'll Support You
+                </h3>
+
+
+                <p>
+                    Your dreams are yours,
+                    but I'll always be happy
+                    to cheer for you along the way.
+                </p>
+
+
+                <div class="promise-bottom">
+
+                    <span>
+                        promise
+                    </span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROMISE 03 -->
+
+            <article
+                class="promise-card"
+                data-promise="3"
+                data-reveal="up"
+            >
+
+                <div class="promise-top">
+
+                    <span class="promise-number">
+                        03
+                    </span>
+
+                    <span class="promise-icon">
+                        😂
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    I'll Make You Laugh
+                </h3>
+
+
+                <p>
+                    Even when my jokes are terrible...
+
+                    I'll probably still make them.
+                </p>
+
+
+                <div class="promise-bottom">
+
+                    <span>
+                        promise
+                    </span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROMISE 04 -->
+
+            <article
+                class="promise-card"
+                data-promise="4"
+                data-reveal="up"
+            >
+
+                <div class="promise-top">
+
+                    <span class="promise-number">
+                        04
+                    </span>
+
+                    <span class="promise-icon">
+                        🌙
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    I'll Miss You
+                </h3>
+
+
+                <p>
+                    Okay...
+
+                    this one doesn't even need a promise.
+
+                    I already do.
+                </p>
+
+
+                <div class="promise-bottom">
+
+                    <span>
+                        promise
+                    </span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROMISE 05 -->
+
+            <article
+                class="promise-card"
+                data-promise="5"
+                data-reveal="up"
+            >
+
+                <div class="promise-top">
+
+                    <span class="promise-number">
+                        05
+                    </span>
+
+                    <span class="promise-icon">
+                        🌱
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    I'll Keep Growing
+                </h3>
+
+
+                <p>
+                    I don't promise to be perfect.
+
+                    I promise to keep learning,
+                    growing and becoming better.
+                </p>
+
+
+                <div class="promise-bottom">
+
+                    <span>
+                        promise
+                    </span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- PROMISE 06 -->
+
+            <article
+                class="promise-card promise-card-special"
+                data-promise="6"
+                data-reveal="up"
+            >
+
+                <div class="promise-top">
+
+                    <span class="promise-number">
+                        06
+                    </span>
+
+                    <span class="promise-icon">
+                        ❤️
+                    </span>
+
+                </div>
+
+
+                <h3>
+                    I'll Keep Choosing Us
+                </h3>
+
+
+                <p>
+                    Through ordinary days,
+                    busy days,
+                    happy days,
+                    and difficult ones...
+
+                    I'll keep caring about us.
+                </p>
+
+
+                <div class="promise-bottom">
+
+                    <span>
+                        from my heart
+                    </span>
+
+                    <i class="fa-solid fa-heart"></i>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+
+        <!-- Promise ending -->
+
+        <div
+            class="promise-ending"
+            data-reveal="scale"
+        >
+
+            <div class="promise-ending-line"></div>
+
+
+            <span>
+                ✦
+            </span>
+
+
+            <p>
+                I can't promise what every tomorrow
+                will look like...
+            </p>
+
+
+            <h3>
+                But I can promise to appreciate
+                every beautiful moment we get.
+            </h3>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 08 — OUR FUTURE
+================================================== -->
+
+<section
+    id="future"
+    class="story-section future-section"
+>
+
+    <div
+        class="future-background"
+        aria-hidden="true"
+    >
+
+        <div class="future-orb future-orb-one"></div>
+
+        <div class="future-orb future-orb-two"></div>
+
+        <div class="future-orb future-orb-three"></div>
+
+    </div>
+
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 08
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            Maybe someday...
+            <span>our little dreams.</span>
+        </h2>
+
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            I don't know exactly what the future
+            has planned for us.
+
+            And honestly...
+
+            that's okay.
+
+        </p>
+
+
+        <p
+            class="section-text large-text"
+            data-reveal="up"
+        >
+            I just hope there are many more
+            moments waiting for us.
+        </p>
+
+
+
+        <!-- =============================================
+             FUTURE DREAM CARDS
+        ============================================== -->
+
+        <div
+            id="futureGrid"
+            class="future-grid"
+        >
+
+
+            <div
+                class="future-card"
+                data-reveal="up"
+            >
+
+                <div class="future-icon">
+                    🌅
+                </div>
+
+                <span>
+                    ONE DAY
+                </span>
+
+                <h3>
+                    Watch sunsets together
+                </h3>
+
+                <p>
+                    Somewhere quiet,
+                    with no rush to go anywhere.
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="future-card"
+                data-reveal="up"
+            >
+
+                <div class="future-icon">
+                    🚗
+                </div>
+
+                <span>
+                    ONE DAY
+                </span>
+
+                <h3>
+                    Random adventures
+                </h3>
+
+                <p>
+                    Going somewhere without
+                    planning every little thing.
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="future-card"
+                data-reveal="up"
+            >
+
+                <div class="future-icon">
+                    📸
+                </div>
+
+                <span>
+                    ONE DAY
+                </span>
+
+                <h3>
+                    More memories
+                </h3>
+
+                <p>
+                    So many pictures that
+                    we'll never know where to store them.
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="future-card"
+                data-reveal="up"
+            >
+
+                <div class="future-icon">
+                    🌍
+                </div>
+
+                <span>
+                    ONE DAY
+                </span>
+
+                <h3>
+                    See new places
+                </h3>
+
+                <p>
+                    Exploring places we've
+                    only talked about. do trips , Shopping for each other together with love 
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="future-card"
+                data-reveal="up"
+            >
+
+                <div class="future-icon">
+                    ☕
+                </div>
+
+                <span>
+                    ONE DAY
+                </span>
+
+                <h3>
+                    Slow ordinary days
+                </h3>
+
+                <p>
+                    The kind of days that don't
+                    look special but feel perfect.
+                </p>
+
+            </div>
+
+
+
+            <div
+                class="future-card future-card-final"
+                data-reveal="up"
+            >
+
+                <div class="future-icon">
+                    ❤️
+                </div>
+
+                <span>
+                    MOST IMPORTANT
+                </span>
+
+                <h3>
+                    Keep making memories
+                </h3>
+
+                <p>
+                    Wherever life takes us,
+                    I hope we never stop
+                    appreciating the little moments.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <!-- =============================================
+             FUTURE QUOTE
+        ============================================== -->
+
+        <div
+            class="future-quote"
+            data-reveal="scale"
+        >
+
+            <div class="quote-mark">
+                “
+            </div>
+
+
+            <p>
+                I don't need to know
+                exactly what tomorrow holds.
+            </p>
+
+
+            <p class="quote-highlight">
+                I just hope tomorrow
+                gives us another reason to smile.
+            </p>
+
+
+            <div class="quote-mark quote-mark-bottom">
+                ”
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =================================================
+     CHAPTER 09 — A LETTER FOR YOU
+================================================== -->
+
+<section
+    id="loveLetter"
+    class="story-section letter-section"
+>
+
+    <div class="letter-glow"></div>
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 09
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            A little letter
+            <span>from me to you.</span>
+        </h2>
+
+
+        <!-- =============================================
+             LETTER CARD
+        ============================================== -->
+
+        <div
+            id="letterCard"
+            class="letter-card"
+            data-reveal="up"
+        >
+
+            <div class="letter-decoration letter-decoration-top">
+                ✦
+            </div>
+
+
+            <div class="letter-header">
+
+                <span>
+                    TO MY FAVOURITE PERSON Meri MOTTO, MERA BUGGA 
+                </span>
+
+                <div class="letter-heart">
+                    ❤
+                </div>
+
+            </div>
+
+
+            <div class="letter-body">
+
+
+                <p class="letter-greeting">
+                    Hey you...
+                </p>
+
+
+                <p>
+                    I don't really know how to put
+                    six months of feelings into a few
+                    paragraphs.
+                </p>
+
+
+                <p>
+                    There have been so many little
+                    moments between us...
+                    conversations,
+                    laughs,
+                    silly arguments,
+                    random messages,
+                    and moments when I simply
+                    wished you were beside me.
+                </p>
+
+
+                <p>
+                    And somehow,
+                    all those little things became
+                    something I care about
+                    more than I can properly explain.
+                </p>
+
+
+                <p>
+                    You became one of those people
+                    whose message can change my mood,
+                    whose smile can make me smile,
+                    and whose absence can make me
+                    realize just how much I miss you.
+                </p>
+
+
+                <p class="letter-emphasis">
+                    Six months later,
+                    I'm still grateful that our paths
+                    crossed.
+                </p>
+
+
+                <p>
+                    I know neither of us is perfect.
+                    We won't always agree.
+                    Some days will be difficult.
+                    Some days will be busy.
+                </p>
+
+
+                <p>
+                    But I hope that through all those
+                    ordinary days,
+                    we continue to appreciate
+                    the little things that brought us
+                    here.
+                </p>
+
+
+                <p>
+                    And I hope you always remember
+                    that somewhere,
+                    there is someone cheering for you,
+                    believing in your dreams,
+                    and wishing to see you happy.
+                </p>
+
+
+                <p class="letter-emphasis">
+                    Happy six months, silly. ❤️
+                </p>
+
+
+                <p class="letter-signature">
+                    — V
+                </p>
+
+            </div>
+
+
+            <div class="letter-decoration letter-decoration-bottom">
+                ✦
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 10 — THINGS I NEVER SAID
+================================================== -->
+
+<section
+    id="neverSaid"
+    class="story-section never-said-section"
+>
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 10
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            Things I don't
+            <span>say enough.</span>
+        </h2>
+
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            Maybe I don't always say these things
+            when I should...
+            so I'll say them here.
+        </p>
+
+
+
+        <!-- =============================================
+             CONFESSION CARDS
+        ============================================== -->
+
+        <div
+            id="confessionGrid"
+            class="confession-grid"
+        >
+
+
+            <article
+                class="confession-card"
+                data-reveal="up"
+            >
+
+                <span class="confession-icon">
+                    🥹
+                </span>
+
+                <h3>
+                    I Miss You
+                </h3>
+
+                <p>
+                    More than I probably admit.
+                    Sometimes I just wish I could
+                    skip the distance and see you.
+                </p>
+
+            </article>
+
+
+            <article
+                class="confession-card"
+                data-reveal="up"
+            >
+
+                <span class="confession-icon">
+                    ❤️
+                </span>
+
+                <h3>
+                    I Appreciate You
+                </h3>
+
+                <p>
+                    For the conversations,
+                    patience,
+                    laughs,
+                    and all the little things
+                    you probably don't even notice.
+                </p>
+
+            </article>
+
+
+            <article
+                class="confession-card"
+                data-reveal="up"
+            >
+
+                <span class="confession-icon">
+                    ✨
+                </span>
+
+                <h3>
+                    I'm Proud Of You
+                </h3>
+
+                <p>
+                    Not only when you succeed.
+                    I'm proud of you for continuing
+                    even when things feel difficult.
+                </p>
+
+            </article>
+
+
+            <article
+                class="confession-card"
+                data-reveal="up"
+            >
+
+                <span class="confession-icon">
+                    🌙
+                </span>
+
+                <h3>
+                    I Think About You
+                </h3>
+
+                <p>
+                    Sometimes randomly.
+                    A song,
+                    a place,
+                    a joke...
+                    and suddenly I'm thinking of you.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 11 — SECRET MESSAGE
+================================================== -->
+
+<section
+    id="secretMessage"
+    class="story-section secret-section"
+>
+
+    <div class="secret-background">
+
+        <div class="secret-orb"></div>
+
+        <div class="secret-stars"></div>
+
+    </div>
+
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 11
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            One little secret...
+        </h2>
+
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            I kept something here
+            just for you.
+        </p>
+
+
+
+        <!-- =============================================
+             LOCKED MESSAGE
+        ============================================== -->
+
+        <div
+            id="secretBox"
+            class="secret-box"
+            data-reveal="scale"
+        >
+
+
+            <!-- Locked state -->
+
+            <div
+                id="secretLocked"
+                class="secret-locked"
+            >
+
+                <div class="secret-lock">
+
+                    <i class="fa-solid fa-lock"></i>
+
+                </div>
+
+
+                <span class="secret-small">
+                    PRIVATE
+                </span>
+
+
+                <h3>
+                    Open this when you're ready
+                </h3>
+
+
+                <p>
+                    There is a little message
+                    waiting inside.
+                </p>
+
+
+                <button
+                    id="unlockSecret"
+                    class="secret-button"
+                    type="button"
+                >
+
+                    <i class="fa-solid fa-key"></i>
+
+                    <span>
+                        Unlock My Message
+                    </span>
+
+                </button>
+
+            </div>
+
+
+
+            <!-- Unlocked state -->
+
+            <div
+                id="secretUnlocked"
+                class="secret-unlocked"
+            >
+
+                <div class="unlock-heart">
+                    ❤
+                </div>
+
+
+                <span>
+                    YOU FOUND IT
+                </span>
+
+
+                <h3>
+                    Here's what I wanted
+                    you to know...
+                </h3>
+
+
+                <p>
+                    No matter how busy life gets,
+                    I never want you to forget
+                    that you matter.
+                </p>
+
+
+                <p>
+                    Your dreams matter.
+                    Your happiness matters.
+                    Your little victories matter.
+                </p>
+
+
+                <p class="secret-highlight">
+                    And you will always have
+                    someone cheering for you.
+                </p>
+
+
+                <div class="secret-signature">
+                    ❤️ V
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 12 — YOUR VOICE
+================================================== -->
+
+<section
+    id="voiceMessage"
+    class="story-section voice-section"
+>
+
+    <div class="voice-background">
+
+        <div class="voice-wave voice-wave-one"></div>
+
+        <div class="voice-wave voice-wave-two"></div>
+
+        <div class="voice-glow"></div>
+
+    </div>
+
+
+    <div class="section-container">
+
+
+        <div
+            class="section-label"
+            data-reveal="up"
+        >
+            CHAPTER 12
+        </div>
+
+
+        <h2
+            class="section-title"
+            data-reveal="up"
+        >
+            Listen to this
+            <span>with your heart.</span>
+        </h2>
+
+
+        <p
+            class="section-text"
+            data-reveal="up"
+        >
+            I wanted to say something
+            instead of just writing it.
+        </p>
+
+
+
+        <!-- =============================================
+             VOICE PLAYER
+        ============================================== -->
+
+        <div
+            id="voiceCard"
+            class="voice-card"
+            data-reveal="scale"
+        >
+
+
+            <div class="voice-orb">
+
+                <div class="voice-orb-inner">
+
+                    <i class="fa-solid fa-microphone"></i>
+
+                </div>
+
+            </div>
+
+
+            <div class="voice-info">
+
+                <span>
+                    A MESSAGE FROM ME
+                </span>
+
+
+                <h3>
+                    Just press play. ❤️
+                </h3>
+
+
+                <p>
+                    Close everything else for a moment
+                    and just listen.
+                </p>
+
+            </div>
+
+
+            <div class="voice-controls">
+
+
+                <button
+                    id="voicePlayButton"
+                    class="voice-play-button"
+                    type="button"
+                    aria-label="Play voice message"
+                >
+
+                    <i class="fa-solid fa-play"></i>
+
+                </button>
+
+
+                <div class="voice-progress">
+
+                    <div
+                        id="voiceProgress"
+                        class="voice-progress-bar"
+                    ></div>
+
+                </div>
+
+
+                <span
+                    id="voiceTime"
+                    class="voice-time"
+                >
+                    0:00
+                </span>
+
+
+            </div>
+
+
+            <audio
+                id="voiceMessageAudio"
+                preload="metadata"
+            >
+
+                <source
+                    src="assets/voice-message.mp3"
+                    type="audio/mpeg"
+                >
+
+            </audio>
+
+
+        </div>
+
+
+        <p
+            class="voice-note"
+            data-reveal="up"
+        >
+            P.S. — Don't laugh at my voice. 😭😂
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     CHAPTER 13 — SIX MONTHS
+================================================== -->
+
+<section
+    id="anniversaryMoment"
+    class="story-section anniversary-moment-section"
+>
+
+    <div class="anniversary-rays"></div>
+
+    <div class="anniversary-particles"></div>
+
+
+    <div class="section-container">
+
+
+        <div
+            class="anniversary-number"
+            data-reveal="scale"
+        >
+
+            <span>
+                6
+            </span>
+
+            <small>
+                MONTHS
+            </small>
+
+        </div>
+
+
+        <div
+            class="anniversary-title"
+            data-reveal="up"
+        >
+
+            <span>
+                Happy
+            </span>
+
+            <strong>
+                6 Months
+            </strong>
+
+        </div>
+
+
+        <div
+            class="anniversary-heart"
+            data-reveal="scale"
+        >
+
+            <span>
+                ❤
+            </span>
+
+        </div>
+
+
+        <p
+            class="anniversary-text"
+            data-reveal="up"
+        >
+
+            Six months of memories.
+
+            Six months of smiles.
+
+            Six months of missing you.
+
+            Six months of learning more
+            about each other.
+
+        </p>
+
+
+        <p
+            class="anniversary-highlight"
+            data-reveal="up"
+        >
+
+            And hopefully...
+
+            many more beautiful chapters
+            waiting for us.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =================================================
+     FINAL CHAPTER — OUR LITTLE UNIVERSE
+================================================== -->
+
+<section
+    id="finale"
+    class="finale-section"
+>
+
+
+    <!-- =============================================
+         FINAL STAR FIELD
+    ============================================== -->
+
+    <div
+        id="finalStarField"
+        class="final-star-field"
+    ></div>
+
+
+    <div class="final-nebula final-nebula-one"></div>
+
+    <div class="final-nebula final-nebula-two"></div>
+
+
+
+    <!-- =============================================
+         FINAL CONTENT
+    ============================================== -->
+
+    <div class="finale-content">
+
+
+        <span
+            class="final-overline"
+        >
+            AND THIS ISN'T THE END...
+        </span>
+
+
+        <h2
+            class="final-title"
+        >
+            Our little universe
+        </h2>
+
+
+        <p
+            class="final-subtitle"
+        >
+            has only just begun.
+        </p>
+
+
+
+        <!-- =============================================
+             FINAL INITIALS
+        ============================================== -->
+
+        <div
+            id="finalInitials"
+            class="final-initials"
+        >
+
+
+            <span
+                id="finalV"
+                class="final-letter final-letter-v"
+            >
+                V
+            </span>
+
+
+            <div
+                id="finalHeart"
+                class="final-heart"
+            >
+
+                <span>
+                    ❤
+                </span>
+
+            </div>
+
+
+            <span
+                id="finalB"
+                class="final-letter final-letter-b"
+            >
+                B
+            </span>
+
+
+        </div>
+
+
+
+        <!-- =============================================
+             FINAL MESSAGE
+        ============================================== -->
+
+        <div
+            class="final-message"
+        >
+
+            <p>
+                Different days.
+            </p>
+
+            <p>
+                Different places.
+            </p>
+
+            <p>
+                Different little problems.
+            </p>
+
+            <p class="final-message-highlight">
+                But one beautiful story.
+            </p>
+
+        </div>
+
+
+
+        <!-- =============================================
+             FINAL BUTTON
+        ============================================== -->
+
+        <button
+            id="finalSurpriseButton"
+            class="final-surprise-button"
+            type="button"
+        >
+
+            <span>
+                One Last Surprise
+            </span>
+
+            <i class="fa-solid fa-heart"></i>
+
+        </button>
+
+
+    </div>
+
+
+
+    <!-- =============================================
+         FINAL SURPRISE OVERLAY
+    ============================================== -->
+
+    <div
+        id="finalSurprise"
+        class="final-surprise"
+    >
+
+        <div
+            id="finalSurpriseParticles"
+            class="final-surprise-particles"
+        ></div>
+
+
+        <div class="final-surprise-content">
+
+
+            <div class="final-surprise-heart">
+
+                ❤
+
+            </div>
+
+
+            <span class="final-surprise-small">
+                FROM MY HEART
+            </span>
+
+
+            <h2>
+                Happy 6 Months,
+                Banshuu. ❤️
+            </h2>
+
+
+            <p>
+                Thank you for becoming
+                such a beautiful part
+                of my life.
+            </p>
+
+
+            <p>
+                I don't know what every tomorrow
+                will look like...
+            </p>
+
+
+            <p class="final-surprise-highlight">
+                but I'm grateful for
+                every today that has you in it.😭❤️
+            </p>
+
+
+            <div class="final-signature">
+                With love,
+                <strong>
+                    V ❤️
+                </strong>
+            </div>
+
+
+            <button
+                id="closeFinalSurprise"
+                class="close-surprise-button"
+                type="button"
+            >
+
+                <i class="fa-solid fa-xmark"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+</section>
+
+
+
+        <!-- =================================================
+             TRANSITION
+        ================================================== -->
+
+        <div
+            class="chapter-transition"
+            aria-hidden="true"
+        >
+
+            <span></span>
+
+            <i class="fa-solid fa-heart"></i>
+
+            <span></span>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="script.js"
+        defer
+    ></script>
+
+
+</body>
+
+</html>
